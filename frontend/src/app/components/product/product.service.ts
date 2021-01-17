@@ -35,11 +35,6 @@ export class ProductService {
             );
   }
 
-  errorHandle(e: any): Observable<any> {
-    this.showMessage('Ocorreu um erro!', true);
-    return EMPTY
-  }
-
   read(): Observable<Product[]> {
     return this.http.get<Product[]>(this.baseUrl)
             .pipe(
@@ -70,5 +65,10 @@ export class ProductService {
               map(obj => obj),
               catchError(e => this.errorHandle(e))
             );
+  }
+
+  errorHandle(e: any): Observable<any> {
+    this.showMessage('Ocorreu um erro!', true);
+    return EMPTY
   }
 }

@@ -1,6 +1,7 @@
-import { HeaderData } from './header-data.model';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+
+import { HeaderData } from './header-data.model';
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +13,6 @@ export class HeaderService {
     icon: 'home',
     routeUrl: ''
   })
-
-  constructor() { }
 
   get headerData(): HeaderData {
     return this._headerData.value

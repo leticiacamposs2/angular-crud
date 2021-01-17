@@ -1,19 +1,29 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Caneta BIC Preta",
-            "price": 6.89
-        },
-        {
-            "id": 2,
-            "name": "Notebook Mac Pro",
-            "price": 12000.89
-        },
-        {
-            "id": 3,
-            "name": "Samsung S20+",
-            "price": 226.89
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta BIC Preta",
+      "price": 6.89
+    },
+    {
+      "id": 3,
+      "name": "Samsung S20+",
+      "price": 226.89
+    },
+    {
+      "name": "Produto Teste Azul",
+      "price": 125.8,
+      "id": 4
+    },
+    {
+      "name": "Palha assada",
+      "price": "123.66",
+      "id": 5
+    },
+    {
+      "name": "Tablet Zero X",
+      "price": "122.33",
+      "id": 6
+    }
+  ]
 }
